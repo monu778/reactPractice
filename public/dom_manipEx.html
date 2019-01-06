@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom manipulations with Javascrkpt & CSS </title>
+    <link href="./css/first.css"  rel="stylesheet">
+</head>
+<body>
+
+
+<div id="1" class="class1">
+    <div id="11" class="class1 class2">
+        <div id="1111">
+
+            <form method="post" action="#">
+                <label for id="i1"> Name:</label>
+                <input type="text" id="i1" name="name" placeholder="Eneter userName">
+
+                <label for id="cities">Select City:</label>
+                <select id="cities" name="city">
+                    <option value="HYD">HYDERABAD</option>
+                    <option value="BLR">BANGALORE</option>
+                </select>
+                <input type="submit" id="s" name="sub" value="Submit"/>
+
+            </form>
+        </div>
+
+    </div>
+    <div>
+
+    </div>
+</div>
+
+<div id="2" class="class1">
+
+
+<button type="button" id="b1"  onmouseover="changeOnmouseOver()">
+    Change the content
+</button>
+</div>
+
+
+
+<script>
+
+    function changeText() {
+      // document.getElementById('12').innerText = "Changed the text";
+       document.getElementById('11').style.backgroundColor="yellow";
+    }
+
+
+    document.getElementById('b1').addEventListener('click',changeText)
+
+
+    function changeOnmouseOver() {
+
+       // document.getElementById('11').innerText = "onmouse over text changed";
+
+    }
+</script>
+</body>
+
+</html>
+
+/*onclick
+ondblclick
+onmousever
+onmouseEnter
+onkeypress
+onkeyup
+onkeydown
+onblur
+onsubmit --> form
+onfocus
+onchange -> Select
+*/
+
+

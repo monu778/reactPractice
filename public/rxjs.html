@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/@reactivex/rxjs@6.0.0/dist/global/rxjs.umd.js"></script>
+
+
+</head>
+<body>
+    <button type="button"> Test Button</button>
+<script>
+
+    const button = document.querySelector('button');
+    button.addEventListener('click', () => console.log('Clicked!'));
+
+    Rx.Observable.fromEvent(button,'click').subscribe(()=>
+
+    console.log("Clicked"));
+
+
+
+</script>
+</body>
+</html>
